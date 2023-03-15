@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div class="tabela-wrapper">
+      <table>
+        <tr>
+          <td colspan="4"><input type="text" id="display" disabled /></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button id="clear" onclick="clearDisplay()">C</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="button">
+            <button class="numeros" onclick="updateDisplay('7')">7</button>
+          </td>
+          <td><button class="numeros" onclick="updateDisplay('8')">8</button></td>
+          <td><button class="numeros" onclick="updateDisplay('9')">9</button></td>
+          <td><button class="operadores" onclick="updateDisplay('/')">/</button></td>
+        </tr>
+        <tr>
+          <td><button class="numeros" onclick="updateDisplay('4')">4</button></td>
+          <td><button class="numeros" onclick="updateDisplay('5')">5</button></td>
+          <td><button class="numeros" onclick="updateDisplay('6')">6</button></td>
+          <td><button class="operadores" onclick="updateDisplay('*')">x</button></td>
+        </tr>
+        <tr>
+          <td><button class="numeros" onclick="updateDisplay('1')">1</button></td>
+          <td><button class="numeros" onclick="updateDisplay('2')">2</button></td>
+          <td><button class="numeros" onclick="updateDisplay('3')">3</button></td>
+          <td><button class="operadores" onclick="updateDisplay('-')">-</button></td>
+        </tr>
+        <tr>
+          <td><button class="numeros" onclick="updateDisplay('0')">0</button></td>
+          <td><button class="operadores" onclick="updateDisplay('.')">.</button></td>
+          <td><button class="operadores" onclick="calculate()">=</button></td>
+          <td><button class="operadores" onclick="updateDisplay('+')">+</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
